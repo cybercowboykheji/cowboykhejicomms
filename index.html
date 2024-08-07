@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                <img src="icons/web-globe.svg" alt="Web Globe" class="icon">
+                Commissions
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="toolbar">
+            <button>
+                <img src="icons/back.svg" alt="Back" class="icon">
+            </button>
+            <button>
+                <img src="icons/forward.svg" alt="Forward" class="icon">
+            </button>
+            <button>
+                <img src="icons/refresh.svg" alt="Refresh" class="icon">
+            </button>
+        </div>
+        <div class="content">
+            <h1>Commissions</h1>
+            <form action="https://formspree.io/YOUR_EMAIL" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="type">Commission Type:</label>
+                <input type="text" id="type" name="type" required>
+                <label for="details">Details:</label>
+                <textarea id="details" name="details" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <h2>Payment</h2>
+            <!-- PayPal button code will go here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
